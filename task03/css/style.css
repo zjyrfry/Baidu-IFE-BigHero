@@ -1,0 +1,56 @@
+body{
+	margin:0px;
+	padding:0px;
+	font-family: "宋体 ";
+}
+.container{
+	margin:20px;
+	padding:20px;
+	background-color: #eee;
+	border:1px solid #999;
+	overflow: hidden;/*此处用来解决使container的容器的高度为子元素的最高高度，下面还有另一种解决方案*/
+	position:relative;
+}
+.left{
+	width:200px;
+	padding:20px;
+	background-color: white;
+	border:1px solid #999;
+	float:left;
+}
+.left img{
+	float:left;
+	border:1px solid #999;
+}
+.left label{
+	float:left;
+	margin-left:20px;
+}
+.middle{
+	float:left;
+	background-color: #fff;
+	padding:20px;
+	margin-left:20px;
+	border:1px solid #999;
+	width: -moz-calc(100% - 448px);/*css3的新特性，适用于流体布局上，此处参考别人的，注意*/
+	width: -webkit-calc(100% - 448px);
+	width: calc(100% -448px);
+}
+.middle p{
+	text-indent: 2.5em;
+}
+.right{
+	float:left;
+	width:80px;
+	background-color: #fff;
+	border: solid 1px #999;
+	padding: 0px 20px 20px 20px;
+	margin-left: 20px;
+}
+.right img{
+	margin-top: 20px;
+	border:1px solid #999;
+}
+/*.clear{
+	clear:both;
+}*//*这种方法也可以解决为子元素最高高度的问题，建议用上一种方法*/
