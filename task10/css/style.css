@@ -1,0 +1,39 @@
+body,html{
+	margin:0px;
+	padding:0px;
+}
+.container{
+	display:flex;
+	padding:20px;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+.item{
+	width:150px;
+	border:1px solid #f00;
+	margin: 20px;
+}
+.item1{
+	height:120px;
+}
+.item2{
+	height:100px;
+}
+.item3{
+	height:40px;
+}
+.item4{
+	height:200px;
+	border:1px solid #0f0;
+}
+@media screen and (max-width:640px ) {
+	.container{
+		display:flex;
+		align-items: flex-start;
+		flex-wrap: wrap;
+	}
+	.item4{
+		order:-1;
+	}
+}
